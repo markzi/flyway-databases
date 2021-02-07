@@ -28,8 +28,10 @@ Flyway only supports SQL databases so any NoSQL databases would need some other 
 - Redshift
 
 ### NoSQL
-- Redis
 - MongoDB
+#### Key Value Store
+- etcd (Used by kubernetes) https://etcd.io/
+- Redis
 - ??
 
 ## Using
