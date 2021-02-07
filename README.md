@@ -31,6 +31,10 @@ Flyway only supports SQL databases so any NoSQL databases would need some other 
 - MongoDB
 #### Key Value Store
 - etcd (Used by kubernetes) https://etcd.io/
+    ##### Improvements
+    1. A seperate server with etcd client
+    2. Add health checks to ensure seperate server waits for the 3 etcd clients to start
+    3. Add other clients to test connectivity and send messages
 - Redis
 - ??
 
