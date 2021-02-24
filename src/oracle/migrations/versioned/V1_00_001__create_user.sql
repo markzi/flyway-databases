@@ -1,0 +1,2 @@
+CREATE USER customer IDENTIFIED BY cu5tom3r;
+GRANT ALL PRIVILEGES TO customer;
