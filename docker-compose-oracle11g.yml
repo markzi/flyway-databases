@@ -1,0 +1,21 @@
+version: "3"
+services:
+  oracle11g:
+    container_name: oracle_container
+    image: oracleinanutshell/oracle-xe-11g:latest
+    ports:
+      - 1521:1521
+      - 5500:5500
+    restart: always
+    environment:
+      ORACLE_PASSWORD: ${ORACLE11_DB_PASSWORD}
+      ORACLE_USER: ${ORACLE11_DB_USER}
+      ORACLE_ALLOW_REMOTE: "true"
+    networks:
+      - oracle11g     
+networks:
+  oracle11g:
+    driver: bridge
+
+volumes:
+  oracle11g:

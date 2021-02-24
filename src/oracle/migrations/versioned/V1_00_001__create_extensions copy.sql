@@ -1,0 +1,2 @@
+CREATE USER mark IDENTIFIED BY markspassword;
+GRANT ALL PRIVILEGES TO mark;
